@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 
 :root {
-  --primary-color: #fffff2;
   --secondary-color: #03203c;
   --color-sucess: #02b290;
   --color-vibrant: #e07c24;
@@ -10,10 +9,11 @@
 body {
   font-family: "Merriweather", serif;
   background-color: var(--color-vibrant);
+  color: #51ff0d;
 }
 
 .container {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-align: center;
 }
 
@@ -39,6 +39,7 @@ input {
   border-color: var(--primary-color);
   border-radius: 0.5rem;
   margin: 1rem auto;
+  color: #51ff0d;
 }
 #output {
   background-color: var(--primary-color);
