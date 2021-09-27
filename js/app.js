@@ -1,7 +1,6 @@
 function reverseStr (str) {
-  var listOfChars = str.split('')
-  var reverseChar = listOfChars.reverse()
-  var reverseStr = reverseChar.join('')
+  var reverseStr = str.split('').reverse().join('')
+
 
   return reverseStr
 }

@@ -2,16 +2,17 @@
 
 :root {
   --primary-color: #fffff2;
-  --secondary-color: #791e94;
+  --secondary-color: #03203c;
+  --color-sucess: #02b290;
+  --color-vibrant: #e07c24;
 }
 
 body {
   font-family: "Merriweather", serif;
-  background-color: var(--secondary-color);
+  background-color: var(--color-vibrant);
 }
 
 .container {
-  background-color: var(--secondary-color);
   color: var(--primary-color);
   text-align: center;
 }
@@ -56,23 +57,24 @@ input {
   display: inline;
   padding: 0rem 1rem;
 }
-
-.footer {
-  background-color: var(--secondary-color);
-  padding: 7rem 1rem;
+footer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 3rem;
+}
+footer p {
   text-align: center;
-  color: white;
-}
-
-.footer .link {
-  color: white;
-}
-
-.footer ul {
-  padding-inline-start: 0px;
-}
-
-.footer .footer-header {
-  font-weight: bold;
   font-size: large;
+}
+footer a {
+  text-align: center;
+}
+i {
+  text-align: center;
+  margin-top: 0.9rem;
+  font-size: 1.7rem;
+  margin-left: 1rem;
+  color: #03203c;
 }
