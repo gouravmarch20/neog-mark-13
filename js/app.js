@@ -41,11 +41,11 @@ function allTheFormatDate (date) {
   var convertDate = convertDateInStr(date)
 
   var ddmmyyyy = convertDate.day + convertDate.month + convertDate.year
-  var mmddyyyy = convertDate.month + convertDate.day + convertDate.year
-  var yyyymmdd = convertDate.year + convertDate.month + convertDate.day
   var ddmmyy = convertDate.day + convertDate.month + convertDate.year.slice(-2)
-  var mmddyy = convertDate.month + convertDate.day + convertDate.year
+  var yyyymmdd = convertDate.year + convertDate.month + convertDate.day
   var yymmdd = convertDate.year.slice(-2) + convertDate.month + convertDate.day
+  var mmddyyyy = convertDate.month + convertDate.day + convertDate.year
+  var mmddyy = convertDate.month + convertDate.day + convertDate.year
 
   return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd]
 }
@@ -139,16 +139,17 @@ function clickHandler (e) {
       month: Number(listOfDate[1]),
       year: Number(listOfDate[0])
     }
-
     var isPalindrome = checkPalindromDateFormat(date)
 
     if (isPalindrome) {
-      outputDiv.innerText = 'Yay! your birthday is a palindrome!!'
+      outputDiv.innerText = 'Superv ! your birthday is date is  palindrome!!'
     } else {
       var [setcounter, nextDate] = getNextPalindrom(date)
 
-      outputDiv.innerText = `The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${setcounter} days! 😔`
+      outputDiv.innerText = `you missed it by ${setcounter} days! 😓  nearest  palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year} `
     }
+  } else {
+    alert('invalid date of birth')
   }
 }
 sumitDob.addEventListener('click', clickHandler)
