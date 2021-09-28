@@ -1,6 +1,12 @@
-function reverseStr (str) {
-  var reverseStr = str.split('').reverse().join('')
+var userDob = document.querySelector('#user-dob')
+var sumitDob = document.querySelector('#sumit-dob')
+var outputDiv = document.querySelector('#output')
 
+function reverseStr (str) {
+  var reverseStr = str
+    .split('')
+    .reverse()
+    .join('')
 
   return reverseStr
 }
@@ -122,12 +128,9 @@ function getNextPalindrom (date) {
   }
   return [setcounter, nextDate]
 }
-var birthDate = document.querySelector('#birth-date')
-var submitBtn = document.querySelector('#check-button')
-var outputDiv = document.querySelector('#output')
 
 function clickHandler (e) {
-  var dateOfBirth = birthDate.value
+  var dateOfBirth = userDob.value
 
   if (dateOfBirth !== '') {
     var listOfDate = dateOfBirth.split('-')
@@ -148,4 +151,4 @@ function clickHandler (e) {
     }
   }
 }
-submitBtn.addEventListener('click', clickHandler)
+sumitDob.addEventListener('click', clickHandler)
