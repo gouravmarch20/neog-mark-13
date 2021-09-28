@@ -1,81 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
-
-:root {
-  --secondary-color: #03203c;
-  --color-sucess: #02b290;
-  --color-vibrant: #e07c24;
-}
-
-body {
-  font-family: "Merriweather", serif;
-  background-color: var(--color-vibrant);
-  color: #51ff0d;
+body{
+  margin: 0rem;
 }
 
 .container {
-  color: var(--secondary-color);
+  max-width: 660px;
+  margin: 0 auto;
+  background-color: red;
+  margin-bottom: 1rem;
+}
+.hero-heading{
   text-align: center;
-}
-
-input,
-label {
-  display: block;
-  text-align: center;
-  margin-top: 1rem;
-  font-weight: bold;
-}
-input {
-  margin: 1rem auto;
-  max-width: fit-content;
-  padding: 0.5rem 0.5rem;
-}
-#check-button {
-  display: block;
-  padding: 0.5rem 1rem;
-  background-color: var(--secondary-color);
-  color: var(--seconday-color);
-  font-weight: bold;
-  font-size: 1rem;
-  border-color: var(--primary-color);
-  border-radius: 0.5rem;
-  margin: 1rem auto;
-  color: #51ff0d;
-}
-#output {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 1rem;
-  max-width: 600px;
-  margin: auto;
-}
-
-/** footer**/
-.list-non-bullet {
-  list-style: none;
-}
-
-.list-item-inline {
-  display: inline;
-  padding: 0rem 1rem;
-}
-footer {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin: auto;
-  margin-top: 3rem;
-}
-footer p {
-  text-align: center;
-  font-size: large;
-}
-footer a {
-  text-align: center;
-}
-i {
-  text-align: center;
-  margin-top: 0.9rem;
-  font-size: 1.7rem;
-  margin-left: 1rem;
-  color: #03203c;
 }
